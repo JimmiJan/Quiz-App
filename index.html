@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/207ef960a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="mainBox">
+
+        <section class="quizForm">
+            <div class="formHeading">
+                <h2>Form</h2>
+                <h3>Please Fill  Form</h3>
+            </div>
+            <div>
+                <input type="text" id="FormName" placeholder="Your Name is ...">
+                <small id="FormNameError"></small>
+            </div>
+
+
+            <div>
+                <input type="text" id="FormEmail" placeholder="Your Email Address is ...">
+                <small id="FormEmailError"></small>
+            </div>
+
+            <div>
+                <input type="text" id="FormCell" placeholder="Your Phone Number is...">
+                <small id="FormCellError"></small>
+            </div>
+
+            <div>
+                <input type="text" id="FormSchool" placeholder="Your Institute Name...">
+                <small id="FormSchoolError"></small>
+            </div>
+
+            <div>
+                <button onclick="onSubmit()">Submit</button>
+            </div>
+
+        </section>
+       
+        <section class="quizStartBtn hide">
+            <button id="quizBtn">QUIZ START</button>
+        </section>
+        
+        <section class="QuestBox hide">
+
+            <section class="userInfo">
+                <div class="userName">
+                    <p id="setUserName">Name: Jamshed Shahid</p>
+                    <p id="setEmail">Email: Jimmi00@gmail.com</p>
+                </div>
+                
+
+            </section>
+
+            <section class="question">
+
+                <h2 id="Quizquestion"></h2>
+                <ul class="optionUl">
+                    <li class="option"> </li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </ul>
+            </section>
+
+            <section class="quizFooter">
+
+                <div id="quesNum">
+                     
+                </div>
+
+                <div class="nextQues">
+                    <button onclick="nextQuestion()" id="nextQuest">NEXT</button>
+                </div>
+
+                </section>
+
+
+        </section>
+
+
+            <section class="resultBox hide" id="resultMainBox">
+
+               
+
+                <div class="RightOption" >
+                    <p id="rightCount">
+                   Thanks You</p>
+                <p id="wrongCount">
+                   Your Quiz Answer is .......</p>
+                </div>
+    
+                <div class="resetBtn">
+                    <button onclick="window.location.reload()"> Reset Quiz</button>
+                </div>
+            </section>
+
+
+            
+
+
+
+
+
+
+
+
+    </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>
